@@ -1,0 +1,725 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+.navigBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 7%;
+}
+.navigBar img{
+        display: none;
+    }
+.navigBar .div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+.navigBar .div1 img{
+    display: flex;
+    width: 27px;
+    border-radius: 14px;
+    margin: 0px 5px 0px 5px;
+}
+.navigBar .div1 p{
+    font-weight: 600;
+    color: rgb(59, 4, 45);
+    font-size: 17px;
+}
+.navigBar .div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 70%;
+    height: 100%;
+}
+.navigBar .div2 button{
+    padding: 4px;
+    height:25px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #68a1eb;
+    color: white;
+    font-size: 16px;
+}
+.navigBar .div3{
+    display: none;
+    width: 10%;
+}
+.navigBar .div3 .menuBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+}
+.navigBar .div3 .menuBtn img{
+    display: flex;
+    width: 40px;
+}
+.navigBar .div4{
+    display: flex;
+    width: 10%;
+}
+.navigBar .div4 .menuBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+}
+.navigBar .div4 .menuBtn img{
+    display: flex;
+    width: 40px;
+}
+.navigBar .div4{
+    display: flex;
+    width: 10px;
+}
+.dropDown1{
+    display: none;
+    position: absolute;  
+    right: 12px;
+    top: 7%;
+    z-index: 100;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+.dropDown1 li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.dropDown1 li a{
+    text-decoration: none;
+}
+.dropDown1 li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    height: 22px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px;
+}
+.dropDown{
+    display: none;
+    position: absolute;  
+    right: 12px;
+    top: 7%;
+    z-index: 100;
+    padding: 5px;
+    width: 250px;
+    height: 190px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+.dropDown li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.dropDown li a{
+    text-decoration: none;
+}
+.dropDown li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    height: 22px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px;
+}
+.dropDown li button:hover{
+    background-color: #79acee;
+}
+.dropDown li button:focus{
+    background-color: #7eda6c;
+}
+.dropDown1 li button:hover{
+    background-color: #79acee;
+}
+.dropDown1 li button:focus{
+    background-color: #7eda6c;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 91%;
+    background-color: #fcfafa;
+    background: url("icon/img4.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.personal{
+    display: flex;
+    background-color: rgb(204, 230, 180);
+    flex-direction: row;
+    width: 100%;
+    height: 93%;
+}
+.personal .list{
+    display: flex;
+    width: 35%;
+    height: 100%;
+    align-items: start;
+    justify-content: start;
+    border-radius: 6px;
+    flex-direction: column;
+    padding: 10px 10px 10px 20px;
+}
+.list .search_result{
+    display: flex;
+    flex-direction: row;
+    border-radius: 1px;
+    box-shadow: 0px 0px 5px rgb(169, 182, 54);
+    margin: 3px 0px 10px 5px;
+    padding: 5px;
+}
+.list .search_result .search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.list .search_result .search div p{
+    font-size: 16px;
+    color: red;
+    font-weight: 550;
+}
+.list .search_result input{
+    border: none;
+    width: 200px;
+    height: 27px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.list .search_result form .search_button{
+    border: none;
+    width: 60px;
+    height: 26px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(76, 76, 235);
+    font-size: 12px;
+    margin: 5px 6px;
+}
+.list .search_result form div{
+    display: flex;
+    flex-direction: row;
+}
+.list .search_result form div div{
+    display: flex ;
+    margin: 7px 5px 2px 7px;
+    color: green;
+    font-weight: 600;
+    font-size: 16px;
+}
+.list .div1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin: 1px 12px 1px 5px;
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(169, 182, 54);
+}
+.list .div1 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.list .div1 a div {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(73, 106, 143);
+    padding: 5px;
+    border-radius: 5px;
+}
+.list .div1 div p{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 2px;
+    text-decoration: none;
+    color: white;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+}
+.message .viewbox{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 50%;
+    height: 87%;
+    max-height: 87%;
+    padding: 5px;
+    border-radius: 5px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px gray;
+        background-color: rgb(205, 223, 140);
+    overflow-y: scroll;
+    margin-top: 6px;
+}
+.message .viewbox::-webkit-scrollbar{
+    background: transparent;
+    width: 2px;
+}
+.message .viewbox1{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 1px;
+    background-color:  rgb(233, 226, 226);
+    align-items: center;
+    justify-content: center;
+}
+.message .textbox1{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    border-radius: 5px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px gray;
+    margin: 0;
+    width: 50%;
+}
+.message .textbox1 form{
+    overflow-x: hidden;
+}
+.message .textbox1 form .b1{
+    width: 86%;
+    height: 37px;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+}
+.message .textbox1 form .b2{
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: #663be7;
+    color: white;
+    height: 37px;
+    margin-left: 7px;
+}
+
+.myMessage{
+    float: left;
+    display: inline-block;
+    background: transparent;
+}
+
+.otherMessage{
+    float: right;
+    display: inline-block;
+    background: transparent;
+}
+.content1{
+    display: inline-block;
+    word-wrap: break-word;
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+    background-color: rgb(107, 55, 94);
+    border-radius: 20px;
+    padding: 8px 50px 8px 8px;
+    margin: 5px;
+    justify-content: start;
+}
+.content2{
+    display: inline-block;
+    word-wrap: break-word;
+    float: right;
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+    background-color: rgb(50, 88, 131);
+    border-radius: 20px;
+    padding: 8px 50px 8px 8px;
+    margin: 5px;
+    align-items: start;
+}
+.content2 .senderName{
+    padding: 2px ;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: arial;
+    font-weight: 550;
+    color: gray;
+    margin-left: 0px;
+}
+.content2 .chat{
+    margin-left: 10px;
+}
+.content1 .chat{
+    margin-left: 10px;
+}
+.content1 .senderName{
+    padding: 2px ;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: arial;
+    font-weight: 550;
+    color: gray;
+    margin-left: 0px;
+}
+
+.group{
+    display: none;
+    background-color: rgb(204, 230, 180); 
+    flex-direction: row;
+    height: 93%;
+    align-items: center;
+    justify-content: center;
+}
+.group .message{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.feedback{
+    display: none;
+    background-color: rgb(204, 230, 180);
+    align-items: center;
+    justify-content: center;
+}
+.feedback p{
+    font-size: 17px;
+    font-family: arial;
+    font-weight: 550;
+    color: #f70707;
+    margin: 7px;
+}
+.feedback h3{
+    color: green;
+    margin: 10px 10px 25px 10px;
+}
+.feedback .box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 82%;
+    background-color: rgb(143, 207, 236);
+    border-radius: 20px;
+    flex-direction: column;
+}
+.feedback .box1 form{
+    display: flex;
+    flex-direction: column;
+}
+.feedback .box1 form label{
+    font-size: 17px;
+    font-weight: 600;
+    color: #0c6109;
+    margin-left: 10px;
+}
+.feedback .box1 form input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 5px;
+}
+.feedback .box1 form .description{
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    align-items: start;
+    justify-content: start;
+}
+.feedback .box1 form .submit{
+    width: 120px;
+    height: 27px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(7, 44, 100);
+    padding: 3px;
+    font-weight: 550;
+    margin-left: 50px;
+}
+.profile{
+    display: none;
+    background-color: rgb(204, 230, 180);
+    align-items: center;
+    justify-content: center;
+}
+.profile .p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2bb926;
+    margin: 5px;
+}
+.profile .profile1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 10px;
+    border-radius: 10px;    
+} 
+.profile .profile1 .a1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 7px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px gray;
+    font-weight: 600;
+    font-size: 15px;
+}
+.profile .profile1 .a2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 7px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px gray;
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile .profile1 div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(235, 227, 227);
+    backdrop-filter: blur(20px);
+    margin: 3px;
+    padding: 0;
+    border-radius: 5px;      
+}
+.profile .profile1 button{
+    background-color: #c0b4e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    width: 150px;
+    height: 25px;
+    border: none;
+    margin: 7px;
+    padding: 4px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px rgb(153, 133, 133);
+    font-weight: 550;
+    font-size: 16px;
+}
+.profile .profile2{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 10px;
+    border-radius: 10px;    
+} 
+.profile .profile2 .a1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 7px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px gray;
+    font-weight: 600;
+    font-size: 15px;
+}
+.profile .profile2 .a2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px gray;
+    font-weight: 500;
+    font-size: 15px;
+    height: 70%;
+}
+.profile .profile2 .a2 input{
+    height: 95%;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 3px;
+    padding: 3px;
+    
+}
+.profile .profile2 div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(235, 227, 227);
+    backdrop-filter: blur(20px);
+    margin: 3px;
+    padding: 0;
+    border-radius: 5px;      
+}
+.profile .profile2 button{
+    background-color: #c0b4e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    width: 150px;
+    height: 25px;
+    border: none;
+    margin: 7px;
+    padding: 4px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px rgb(153, 133, 133);
+    font-weight: 550;
+    font-size: 16px;
+}
+.changePassword{
+    display: none;
+    background-color: rgb(204, 230, 180);
+    align-items: center;
+    justify-content: center;
+}
+.changePassword form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 10px;
+    border-radius: 10px;    
+}
+.changePassword form h4{
+    font-size: 18px;
+    font-weight: 550;
+    color: #23a51f;
+}
+.changePassword form .h5{
+    font-size: 18px;
+    font-weight: 550;
+    color: #a70c0c;
+}
+.changePassword form input{
+    margin: 4px;
+    padding-left: 10px;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 19px;
+}
+.changePassword form .secQstn{
+    margin: 4px;
+    padding-left: 10px;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 19px;
+}
+.changePassword form .submit1{
+    margin: 7px;
+    width: 100px;
+    height: 37px;
+    font-size: 17px;
+    font-weight: 600; 
+    color: white;
+    background-color: #3333ff;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+@media(max-width: 600px){
+    .personal .wellcome{
+        display: none;
+    }
+    .personal .events{
+        width: 90%;
+    }
+    .navigBar .div1{
+        width: 85%;
+        height: 100%;
+        justify-content: start;
+        padding-left: 15px;
+    }
+    .navigBar .div3 {
+        display: flex;
+        width: 15%;
+    }
+    .navigBar .div2{
+        display: none;
+    } 
+    .dropDown1{
+        display: none; 
+    }
+    .navigBar .div4{
+        display: none;
+    }     
+}
+
+
+
+
+
+
+
+
+

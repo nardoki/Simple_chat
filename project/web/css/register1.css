@@ -1,0 +1,239 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+.topbar{
+    display: flex;
+    height: 7%;   
+}
+.topbar .div1{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.topbar .div1{
+    font-weight: 600;
+    color: #dd5959;
+    font-size: 19px;
+}
+.topbar .div2{
+    display: flex;
+    flex-direction: row;
+    padding-right: 17px;
+    width: 50%;
+    align-items: center;
+    justify-content: end;
+    
+}
+.topbar .div2 button{
+    width: 90px;
+    height:25px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #68c2eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+section{
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 93%;
+}
+form{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 500px;
+    height: 440px;
+    box-shadow: 0px 0px 20px rgb(75, 55, 80); 
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+form div{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+form div input{
+    margin: 4px;
+    padding-left: 10px;
+    width: 200px;
+    height: 31px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid rgb(206, 239, 243);
+}
+form .adress{
+    display: flex;
+    width: 410px;
+    flex-direction: column;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 5px;
+}
+form .adress div{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 2px;
+}
+form .adress .adress1{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+    margin: 2px;
+}
+form .adress div p{
+    font-size: 16px;
+    margin: 2px 2px 2px 12px;
+    color: #2a2a57;
+}
+form .adress input{
+    margin: 4px;
+    padding-left: 10px;
+    width: 195px;
+    height: 31px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid rgb(206, 239, 243);
+}
+form .adress select{
+    margin: 4px;
+    padding-left: 10px;
+    width: 195px;
+    height: 31px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid rgb(206, 239, 243);
+}
+form .submit1{
+    margin: 10px;
+    width: 100px;
+    height: 37px;
+    font-size: 17px;
+    font-weight: 600; 
+    color: white;
+    background-color: #5db2f8;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+form .haveAcount{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 0px 0px 0px 10px;
+}
+form .haveAcount a{
+    font-size: 16px;
+    color: #8cb1cf;
+    font-weight: 500;
+}
+form a{
+    margin: 7px;
+    font-size: 18px;
+    
+    font-weight: 600;
+    text-decoration : none;
+}
+form .a1{
+    font-size: 16px;
+}
+
+::placeholder{
+    margin-left: 7px;
+    font-size: 16px;
+}
+h4{
+    margin: 0px;
+    padding: 0;
+    color: #db3e16;
+    font-size: 22px;
+
+}
+h2{
+    color: #1a7575;
+    margin: 5px 5px 20px 5px;
+    font-size: 25px;
+   
+}
+
+@media(max-width:600px){
+    form{
+        padding: 7px; 
+        border: none;
+        width: 350px;
+        height: 380px;
+
+    }
+    form input{
+        margin: 7px;
+        padding-left: 5px;
+        width: 200px;
+        height: 32px;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+    }
+    form .submit{
+        margin: 7px;
+        width: 80px;
+        height: 34px;
+        font-size: 19px;
+        border-radius: 5px;
+    }
+    form a{
+        margin: 5px;
+        font-size: 18px;
+    }
+    .registerd{
+        font-size: 20px;
+    }
+    ::placeholder{
+        margin-left: 5px;
+        font-size: 16px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .sucess{
+        margin: 5px;
+        font-size: 18px;
+    }
+    h2{
+        font-size: 26px;      
+    }
+    #class1{
+        font-size: 15px;
+    }
+    .secQstn{
+        margin: 7px;
+        padding-left: 5px;
+        width: 200px;
+        height: 32px;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+    }
+}

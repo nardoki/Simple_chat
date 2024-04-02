@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	 version="4.0">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>servlett.register</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/servlett.register</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>servlett.login</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/servlett.login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>search</servlet-name>
+        <servlet-class>servlett.search</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/servlett.search</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>changePassword</servlet-name>
+        <servlet-class>servlett.changePassword</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>changePassword</servlet-name>
+        <url-pattern>/servlett.changePassword</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deleteUser</servlet-name>
+        <servlet-class>servlett.delete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteUser</servlet-name>
+        <url-pattern>/servlett.delete</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>identifier</servlet-name>
+        <servlet-class>servlett.identifier</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>identifier</servlet-name>
+        <url-pattern>/servlett.identifier</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>sendMessage</servlet-name>
+        <servlet-class>servlett.sendMessage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sendMessage</servlet-name>
+        <url-pattern>/servlett.sendMessage</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>feedback</servlet-name>
+        <servlet-class>servlett.feedback</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>feedback</servlet-name>
+        <url-pattern>/servlett.feedback</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>changeProfile</servlet-name>
+        <servlet-class>servlett.changeProfile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>changeProfile</servlet-name>
+        <url-pattern>/servlett.changeProfile</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>changePassword2</servlet-name>
+        <servlet-class>servlett.changePassword2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>changePassword2</servlet-name>
+        <url-pattern>/servlett.changePassword2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>search2</servlet-name>
+        <servlet-class>servlett.search2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>search2</servlet-name>
+        <url-pattern>/servlett.search2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>sendMessage2</servlet-name>
+        <servlet-class>servlett.sendMessage2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sendMessage2</servlet-name>
+        <url-pattern>/servlett.sendMessage2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>forgotPassword</servlet-name>
+        <servlet-class>servlett.forgotPassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>forgotPassword</servlet-name>
+        <url-pattern>/servlett.forgotPassword</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
